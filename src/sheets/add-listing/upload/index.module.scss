@@ -1,0 +1,136 @@
+.nextButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Roboto', sans-serif!important;
+    gap: 10px;
+    padding: 8px 30px !important;
+    background-color: #323232!important;
+    color: #fff!important;
+    border: none;
+    border-radius: 15px!important;
+    font-size: 16px!important;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%!important;
+    text-transform: none!important;
+    margin-top: 60px!important;
+    & span{
+      font-size: 24px;
+    }
+    &.imageSend{
+      color: #fff;
+      margin-top: 60px!important;
+      padding-top: 12px!important;
+      padding-bottom: 12px!important;
+    }
+
+  }
+
+.container {
+  max-width: 556px;
+  text-align: center;
+  margin: 0 auto !important;
+  padding: 40px 20px;
+}
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+
+
+.grid {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  // display: grid;
+  // grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 15px;
+  justify-content: center;
+  max-width: 900px;
+}
+.grid:has(.photoCard:nth-child(1):nth-last-child(1)) {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(236, 60, 6);
+}
+.photoCard {
+  width: 110px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.deleteButton {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  background: #000000;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 16px;
+  height:16px;
+  font-size: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.uploadBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  &:hover {
+    background: #e0e0e0;
+  }
+
+  svg {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+
+.successMessage{
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}

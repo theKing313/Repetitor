@@ -1,0 +1,24 @@
+.root {
+    .title {
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        color: #323232;
+    }
+
+    .tabs {
+        margin-top: 30px;
+
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        li {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            color: #323232;
+        }
+    }
+}

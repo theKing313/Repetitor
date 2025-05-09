@@ -1,0 +1,31 @@
+.root {
+    position: relative;
+    .label {
+        width: 100%;
+        position: relative;
+        text-align: left;
+        span {
+            font-family: var(--font-roboto);
+            font-size: 14px;
+            line-height: 20px;
+            margin-right: 20px;
+        }
+        svg {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+        }
+    }
+    .list {
+        max-height: 0;
+        overflow: hidden;
+        background-color: #fff;
+        padding: 0;
+        overflow: auto;
+        // height: 100%;
+        transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+        & > * {
+            padding: 5px 25px;
+        }
+    }
+}

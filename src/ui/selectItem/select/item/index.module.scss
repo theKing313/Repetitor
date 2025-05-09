@@ -1,0 +1,18 @@
+.root {
+    padding: 7px 12px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+
+    .fake {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+
+        border-radius: 100%;
+        background-color: #ed5434;
+
+        position: relative;
+    }
+}

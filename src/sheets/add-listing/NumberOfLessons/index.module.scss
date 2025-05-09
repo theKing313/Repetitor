@@ -1,0 +1,98 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  .MuiAutocomplete-root .MuiInputBase-root {
+    padding: 0 !important;
+  }
+  .input {
+    & div{
+
+    }
+    width: 80%;
+    padding: 0;
+    font-size: 16px;
+    border: none!important;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: #F3F4F7;
+    & label.Mui-focused{
+      color: #ED5434;
+    }
+    outline: none;
+    & fieldset{
+      border: none!important;
+    }
+  }
+  .popularQueries {
+    width: 80%;
+  }
+  
+  .popularTitle {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .queryList {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .queryButton {
+    padding: 8px 12px;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .queryButton:hover {
+    background-color: #ED5434;
+    color: white;
+   
+  }
+  .nextButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Roboto', sans-serif!important;
+    gap: 10px;
+    padding: 8px 30px !important;
+    background-color: #323232!important;
+    color: #fff!important;
+    border: none;
+    border-radius: 15px!important;
+    font-size: 16px!important;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%!important;
+    text-transform: none!important;
+    margin-top: 60px!important;
+    & span{
+      font-size: 24px;
+    }
+}

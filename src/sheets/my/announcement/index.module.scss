@@ -1,0 +1,20 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    max-width: 1300px;
+    margin: 30px auto;
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 42px;
+
+        .block {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+}

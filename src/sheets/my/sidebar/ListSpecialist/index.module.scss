@@ -1,0 +1,63 @@
+.root {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    li {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        cursor: pointer;
+
+        &:hover {
+            .label {
+                color: #ed5434;
+            }
+
+            .icon {
+                background-color: #ed5434;
+
+                svg {
+                    path {
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+
+        .icon {
+            width: 22px;
+            height: 22px;
+
+            border-radius: 4px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            transition: 0.4s;
+
+            svg {
+                path {
+                    transition: 0.4s;
+                }
+            }
+        }
+
+        .label {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #323232;
+
+            transition: 0.4s;
+        }
+
+        &.active {
+            .label {
+                color: #ed5434;
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.root {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    cursor: pointer;
+    user-select: none;
+
+    input {
+        display: none;
+        &:checked {
+            + .defaultFake {
+                background-color: #ed5434;
+
+                &::before {
+                    opacity: 1;
+                }
+            }
+
+            + .fake {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #ED5434;
+                color: #fff;
+                position: relative;
+                & svg{
+                    display: flex;
+                    justify-content: center;
+                    width: 82%;
+                     height: 58%;
+                }
+                .fake {
+                background-color: #fff;
+                }
+            }
+        }
+    }
+    .fake{
+            width: 18px;
+            height: 18px;
+            border-radius: 4px;
+            margin-right: 8px;
+            background-color: #f3f4f7;
+            transition: background-color 0.3s;
+            position: relative;
+    }
+ 
+    .defaultFake {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #f3f4f7;
+        border-radius: 100%;
+        position: relative;
+        transition: 0.4s;
+
+        &::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            background-color: #ffffff;
+            border-radius: 100%;
+
+            opacity: 0;
+        }
+    }
+
+    .label {
+        font-size: 14px;
+        color: #323232;
+        margin-top: -1px;
+    }
+}
